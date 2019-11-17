@@ -1,9 +1,9 @@
 package whatisnewin.com.sun.source.util;
 
 import com.sun.source.util.SimpleDocTreeVisitor;
-import com.sun.source.doctree.ProvidesTree;
 import com.sun.source.doctree.HiddenTree;
 import com.sun.source.doctree.IndexTree;
+import com.sun.source.doctree.ProvidesTree;
 import com.sun.source.doctree.UsesTree;
 
 /**
@@ -18,19 +18,6 @@ import com.sun.source.doctree.UsesTree;
  */
 public final class WhatIsNewInSimpleDocTreeVisitor<R, P>
 {
-  /**
-   * Example call to new method {@link SimpleDocTreeVisitor#visitProvides(ProvidesTree, Object)}.
-   * @since 9
-   * @see SimpleDocTreeVisitor#visitProvides(ProvidesTree, Object)
-   */
-  public R visitProvides(ProvidesTree node, P p)
-  {
-    SimpleDocTreeVisitor<R, P> testee = $$$();
-
-    R result = testee.visitProvides(node, p);
-    return result;
-  }
-
   /**
    * Example call to new method {@link SimpleDocTreeVisitor#visitHidden(HiddenTree, Object)}.
    * @since 9
@@ -54,6 +41,19 @@ public final class WhatIsNewInSimpleDocTreeVisitor<R, P>
     SimpleDocTreeVisitor<R, P> testee = $$$();
 
     R result = testee.visitIndex(node, p);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link SimpleDocTreeVisitor#visitProvides(ProvidesTree, Object)}.
+   * @since 9
+   * @see SimpleDocTreeVisitor#visitProvides(ProvidesTree, Object)
+   */
+  public R visitProvides(ProvidesTree node, P p)
+  {
+    SimpleDocTreeVisitor<R, P> testee = $$$();
+
+    R result = testee.visitProvides(node, p);
     return result;
   }
 

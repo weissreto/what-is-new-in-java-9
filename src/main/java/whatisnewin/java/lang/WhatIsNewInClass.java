@@ -14,19 +14,6 @@ package whatisnewin.java.lang;
 public final class WhatIsNewInClass<T>
 {
   /**
-   * Example call to new method {@link Class#getPackageName()}.
-   * @since 9
-   * @see Class#getPackageName()
-   */
-  public String getPackageName()
-  {
-    Class<T> testee = $$$();
-
-    String result = testee.getPackageName();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link Class#forName(Module, String)}.
    * @since 9
    * @see Class#forName(Module, String)
@@ -47,6 +34,19 @@ public final class WhatIsNewInClass<T>
     Class<T> testee = $$$();
 
     Module result = testee.getModule();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Class#getPackageName()}.
+   * @since 9
+   * @see Class#getPackageName()
+   */
+  public String getPackageName()
+  {
+    Class<T> testee = $$$();
+
+    String result = testee.getPackageName();
     return result;
   }
 

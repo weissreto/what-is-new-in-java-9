@@ -15,19 +15,6 @@ import java.util.stream.IntStream;
 public final class WhatIsNewInString
 {
   /**
-   * Example call to new method {@link String#codePoints()}.
-   * @since 9
-   * @see String#codePoints()
-   */
-  public IntStream codePoints()
-  {
-    String testee = $$$();
-
-    IntStream result = testee.codePoints();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link String#chars()}.
    * @since 9
    * @see String#chars()
@@ -37,6 +24,19 @@ public final class WhatIsNewInString
     String testee = $$$();
 
     IntStream result = testee.chars();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link String#codePoints()}.
+   * @since 9
+   * @see String#codePoints()
+   */
+  public IntStream codePoints()
+  {
+    String testee = $$$();
+
+    IntStream result = testee.codePoints();
     return result;
   }
 

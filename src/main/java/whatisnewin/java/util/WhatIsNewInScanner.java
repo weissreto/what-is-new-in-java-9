@@ -18,19 +18,6 @@ import java.util.regex.Pattern;
 public final class WhatIsNewInScanner
 {
   /**
-   * Example call to new method {@link Scanner#findAll(Pattern)}.
-   * @since 9
-   * @see Scanner#findAll(Pattern)
-   */
-  public Stream<MatchResult> findAll(Pattern pattern)
-  {
-    Scanner testee = $$$();
-
-    Stream<MatchResult> result = testee.findAll(pattern);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link Scanner#tokens()}.
    * @since 9
    * @see Scanner#tokens()
@@ -40,6 +27,19 @@ public final class WhatIsNewInScanner
     Scanner testee = $$$();
 
     Stream<String> result = testee.tokens();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Scanner#findAll(Pattern)}.
+   * @since 9
+   * @see Scanner#findAll(Pattern)
+   */
+  public Stream<MatchResult> findAll(Pattern pattern)
+  {
+    Scanner testee = $$$();
+
+    Stream<MatchResult> result = testee.findAll(pattern);
     return result;
   }
 

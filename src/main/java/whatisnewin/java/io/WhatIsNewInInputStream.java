@@ -16,19 +16,6 @@ import java.io.IOException;
 public final class WhatIsNewInInputStream
 {
   /**
-   * Example call to new method {@link InputStream#readNBytes(byte[], int, int)}.
-   * @since 9
-   * @see InputStream#readNBytes(byte[], int, int)
-   */
-  public int readNBytes(byte[] b, int off, int len) throws IOException
-  {
-    InputStream testee = $$$();
-
-    int result = testee.readNBytes(b, off, len);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link InputStream#readAllBytes()}.
    * @since 9
    * @see InputStream#readAllBytes()
@@ -38,6 +25,19 @@ public final class WhatIsNewInInputStream
     InputStream testee = $$$();
 
     byte[] result = testee.readAllBytes();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link InputStream#readNBytes(byte[], int, int)}.
+   * @since 9
+   * @see InputStream#readNBytes(byte[], int, int)
+   */
+  public int readNBytes(byte[] b, int off, int len) throws IOException
+  {
+    InputStream testee = $$$();
+
+    int result = testee.readNBytes(b, off, len);
     return result;
   }
 

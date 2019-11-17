@@ -15,6 +15,19 @@ import java.lang.StackWalker.StackFrame;
 public final class WhatIsNewInStackWalker$StackFrame
 {
   /**
+   * Example call to new method {@link StackFrame#getClassName()}.
+   * @since 9
+   * @see StackFrame#getClassName()
+   */
+  public String getClassName()
+  {
+    StackFrame testee = $$$();
+
+    String result = testee.getClassName();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link StackFrame#getMethodName()}.
    * @since 9
    * @see StackFrame#getMethodName()
@@ -54,32 +67,6 @@ public final class WhatIsNewInStackWalker$StackFrame
   }
 
   /**
-   * Example call to new method {@link StackFrame#getLineNumber()}.
-   * @since 9
-   * @see StackFrame#getLineNumber()
-   */
-  public int getLineNumber()
-  {
-    StackFrame testee = $$$();
-
-    int result = testee.getLineNumber();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link StackFrame#toStackTraceElement()}.
-   * @since 9
-   * @see StackFrame#toStackTraceElement()
-   */
-  public StackTraceElement toStackTraceElement()
-  {
-    StackFrame testee = $$$();
-
-    StackTraceElement result = testee.toStackTraceElement();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link StackFrame#getFileName()}.
    * @since 9
    * @see StackFrame#getFileName()
@@ -89,6 +76,19 @@ public final class WhatIsNewInStackWalker$StackFrame
     StackFrame testee = $$$();
 
     String result = testee.getFileName();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link StackFrame#getLineNumber()}.
+   * @since 9
+   * @see StackFrame#getLineNumber()
+   */
+  public int getLineNumber()
+  {
+    StackFrame testee = $$$();
+
+    int result = testee.getLineNumber();
     return result;
   }
 
@@ -106,15 +106,15 @@ public final class WhatIsNewInStackWalker$StackFrame
   }
 
   /**
-   * Example call to new method {@link StackFrame#getClassName()}.
+   * Example call to new method {@link StackFrame#toStackTraceElement()}.
    * @since 9
-   * @see StackFrame#getClassName()
+   * @see StackFrame#toStackTraceElement()
    */
-  public String getClassName()
+  public StackTraceElement toStackTraceElement()
   {
     StackFrame testee = $$$();
 
-    String result = testee.getClassName();
+    StackTraceElement result = testee.toStackTraceElement();
     return result;
   }
 
