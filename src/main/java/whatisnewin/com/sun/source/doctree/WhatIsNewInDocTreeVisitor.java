@@ -70,7 +70,7 @@ public final class WhatIsNewInDocTreeVisitor<R, P>
     return result;
   }
 
-  private DocTreeVisitor $$$()
+  private DocTreeVisitor<R, P> $$$()
   {
     return null;
   }

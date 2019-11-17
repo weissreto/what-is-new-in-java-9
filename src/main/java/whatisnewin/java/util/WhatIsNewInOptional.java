@@ -55,7 +55,7 @@ public final class WhatIsNewInOptional<T>
     return result;
   }
 
-  private Optional $$$()
+  private Optional<T> $$$()
   {
     return null;
   }
