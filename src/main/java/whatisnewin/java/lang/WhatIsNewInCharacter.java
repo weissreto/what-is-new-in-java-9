@@ -41,4 +41,15 @@ public final class WhatIsNewInCharacter
    */
   public static final byte DIRECTIONALITY_POP_DIRECTIONAL_ISOLATE = Character.DIRECTIONALITY_POP_DIRECTIONAL_ISOLATE;
 
+  /**
+   * Example call to new method {@link Character#codePointOf(String)}.
+   * @since 9
+   * @see Character#codePointOf(String)
+   */
+  public static int codePointOf(String name)
+  {
+    int result = Character.codePointOf(name);
+    return result;
+  }
+
 }

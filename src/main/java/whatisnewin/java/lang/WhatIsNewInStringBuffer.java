@@ -27,6 +27,19 @@ public final class WhatIsNewInStringBuffer
     return result;
   }
 
+  /**
+   * Example call to new method {@link StringBuffer#codePoints()}.
+   * @since 9
+   * @see StringBuffer#codePoints()
+   */
+  public IntStream codePoints()
+  {
+    StringBuffer testee = $$$();
+
+    IntStream result = testee.codePoints();
+    return result;
+  }
+
   private StringBuffer $$$()
   {
     return null;
